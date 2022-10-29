@@ -37,4 +37,7 @@ abstract class Car {
     public Integer getSpeed(){
         return this.nowSpd;
     }
+    public Integer getPrice() {
+        return price;
+    }
 }

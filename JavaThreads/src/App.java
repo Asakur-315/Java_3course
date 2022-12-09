@@ -1,3 +1,4 @@
+
 public class App {
 
     static void task1(){
@@ -26,11 +27,14 @@ public class App {
 
     }
     static void task5(){
-        Philosopher p1 = new Philosopher();
-        Philosopher p2 = new Philosopher();
-        Philosopher p3 = new Philosopher();
-        Philosopher p4 = new Philosopher();
-        Philosopher p5 = new Philosopher();
+        int[] forks = new int[6];
+
+        Philosopher p1 = new Philosopher(1, forks);
+        Philosopher p2 = new Philosopher(2, forks);
+        Philosopher p3 = new Philosopher(3, forks);
+        Philosopher p4 = new Philosopher(4, forks);
+        Philosopher p5 = new Philosopher(5,forks);
+        
         p1.start();
         p2.start();
         p3.start();

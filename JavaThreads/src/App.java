@@ -25,7 +25,20 @@ public class App {
         thread2.start();
 
     }
+    static void task5(){
+        Philosopher p1 = new Philosopher();
+        Philosopher p2 = new Philosopher();
+        Philosopher p3 = new Philosopher();
+        Philosopher p4 = new Philosopher();
+        Philosopher p5 = new Philosopher();
+        p1.start();
+        p2.start();
+        p3.start();
+        p4.start();
+        p5.start();
+        
+    }
     public static void main(String[] args) throws Exception {
-        task3();
+        task5();
     }
 }

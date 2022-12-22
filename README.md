@@ -8,4 +8,8 @@
 
 ## Control - контрольная работа
 
-## JavaThreads - потоки
+## JavaThreads - потоки  
+
+## Recursion - задания на рекунсию
+
+## TaskManager - планировщик заданий

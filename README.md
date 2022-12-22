@@ -10,6 +10,6 @@
 
 ## JavaThreads - потоки  
 
-## Recursion - задания на рекунсию
+## Recursion - задания на рекурсию
 
 ## TaskManager - планировщик заданий

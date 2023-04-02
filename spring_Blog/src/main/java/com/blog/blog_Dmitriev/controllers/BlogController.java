@@ -18,6 +18,7 @@ public class BlogController {
     public String  blogMain(Model model){
         Iterable<Post> posts = postRepository.findAll();
         model.addAttribute("posts", posts);
+        System.out.println(posts);
         return "blog-main";
     }
 }

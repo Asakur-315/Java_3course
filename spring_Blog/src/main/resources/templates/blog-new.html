@@ -10,12 +10,12 @@
       
       
       <div class="container mt-5">
-        <H1>Блог</H1>
-      <div th:each="el : ${posts}" class= "alert alert-info mt-2">
-        <h3 th:text="${el.title}"></h3>
-        <p th:text="${el.body}"></p>
-        <p th:text="'Дата создания: '+${el.creationDate}"></p>
-        <a th:href="'/blog/' + ${el.id}" class="btn btn-warning">Комментарии</a>
+        <H1>Добавление статьи</H1>
+        <form action="/blog/new" method="post">
+          <input type="text" name="title" placeholder="Название статьи" class="form-control">
+          <textarea type="text" name="body" placeholder="Текст статьи" class="form-control mt-2"></textarea>
+          <button type="submit" class="btn btn-success mt-2">Готово</button>
+        </form>
       </div>
 <div th:insert="~{blocks/footer :: footer}"></div>
 </body>
